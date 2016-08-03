@@ -50,10 +50,10 @@ Beide Benutzer haben aus praktischen Gründen ein gleiches Passwort welches den 
 
 ### andere Softwarepakete mit URL Angabe
 Beispiel zur Installation:
-<code>
+<pre><code>
 $ sudo add-apt-repository ppa:danielrichter2007/grub-customizer  
 $ sudo apt-get update  
 $ sudo apt-get install grub-customizer  
-</code>
+</code></pre>
   * grub-customizer  ppa:danielrichter2007/grub-customizer
 

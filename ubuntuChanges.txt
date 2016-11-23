@@ -1,0 +1,8 @@
+### Changes for Ubuntu
+
+sudo apt-get install synaptic 
+
+gsettings set com.canonical.Unity.Launcher launcher-position Bottom
+
+
+gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true

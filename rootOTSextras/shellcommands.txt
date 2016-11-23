@@ -1,0 +1,46 @@
+otsadmin@Suffragetten:~$ ls -la /dev/disk/by-label/
+insgesamt 0
+drwxr-xr-x 2 root root 160 Jun 22 21:26 .
+drwxr-xr-x 7 root root 140 Jun 22 21:26 ..
+lrwxrwxrwx 1 root root  10 Jun 22 21:27 2ndRoot -> ../../sda2
+lrwxrwxrwx 1 root root  10 Jun 22 21:27 bootpart -> ../../sda7
+lrwxrwxrwx 1 root root  10 Jun 22 21:27 OTSofflineSpace -> ../../sda4
+lrwxrwxrwx 1 root root  10 Jun 22 21:27 serverdir -> ../../sda6
+lrwxrwxrwx 1 root root  10 Jun 22 21:27 UbuntuRoot -> ../../sda8
+lrwxrwxrwx 1 root root  10 Jun 22 21:27 usershome -> ../../sda3
+otsadmin@Suffragetten:~$ 
+
+enp0s25   Link encap:Ethernet  Hardware Adresse 00:21:70:e3:17:c4  
+
+wlp12s0   Link encap:Ethernet  Hardware Adresse 00:22:fb:16:e7:b6  
+          inet Adresse:192.168.3.230  Bcast:192.168.3.255  Maske:255.255.254.0
+
+
+
+
+
+Auflösung 1400x1050
+stop Grafische Anzeige:
+service lightdm stop
+
+
+/etc/init/mdm.conf
+TimedLoginEnable=true
+TimedLogin=learner
+TimedLoginDelay=5
+
+
+
+dpkg-reconfigure console-data
+loadkeys de
+
+
+in /etc/default/grub danach sudo update-grub 
+GRUB_GFXMODE=1024x768
+
+
+/etc/console-tools/config bzw. bei kbd in /etc/kbd/config 
+
+
+
+
